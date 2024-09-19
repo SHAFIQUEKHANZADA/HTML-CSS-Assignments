@@ -1,0 +1,69 @@
+.mainDiv {
+    display: flex;
+    justify-content: space-evenly;  
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 10%;
+}
+
+.innerDiv {
+    width: 22%; 
+    height: 60vh;  
+    border-radius: 1%;  
+    box-shadow: 3px 3px 3px  rgb(208, 205, 205);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    box-sizing: border-box;  
+    overflow: hidden;  
+    text-align: left;
+}
+
+.innerDiv img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;  
+    border-radius: 1%;  
+}
+
+  
+.innerDiv p, 
+.innerDiv button {
+    padding: 5px 10px; /* Uniform padding for all text and buttons */
+    margin: 0; /* Remove default margin */
+}
+
+.innerDiv h1 {
+    font-size: larger;  
+    margin-bottom: 10px;  
+    margin-top: 10%;  
+    text-align: left; 
+    width: 100%;
+    padding-left: 8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.innerDiv p {
+    flex: 1;  
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    margin-bottom: 4px; 
+    color: gray;
+}
+
+.innerDiv button {
+    background: rgb(130, 177, 255);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 18px;
+    cursor: pointer;
+    margin-right: 0;  
+    box-shadow: 3px 3px 3px rgb(173, 173, 231);
+    align-self: flex-start; 
+    margin-bottom: 7%;
+    margin-left: 5%;
+}
+.innerDiv button:hover {
+    background: rgb(100, 150, 230);  
+}
