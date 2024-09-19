@@ -1,0 +1,254 @@
+.navBar {
+    background: rgb(91, 155, 213);  
+    width: 80%;                 
+    display: flex;               
+    justify-content: center;
+    align-items: center;       
+    padding: 5px 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;  
+    flex-wrap: wrap;  
+    border-radius: 10px;  
+    margin-left: 8%; 
+    box-sizing: border-box;     
+}
+
+.divOne {
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: center;           
+    width: 100%;         
+    padding-right: 26%;      
+}
+
+/* .imge {
+    margin-right: 20px;           
+} */
+
+.list {
+    display: flex;                
+    justify-content: center;    
+    align-items: center;        
+    list-style: none;  
+    gap: 30px;                
+}
+
+.list li a {
+    text-decoration: none;    
+    color: rgb(0, 0, 0);  
+    white-space: nowrap;       
+    padding: 10px 20px;  
+    font-weight: 800;
+    font-size: large;          
+}
+
+@media (max-width: 768px) {
+    .list {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(91, 155, 213);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+      padding-right: 0;
+    }
+  
+    .list.active {
+      display: flex;
+    }
+  }
+  
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  .divTwo {
+    width: 80%;                
+    margin: 0 auto;                
+    text-align: center;            
+    padding: 20px;       
+}
+
+.divTwo img {
+    max-width: 100%;              
+    height: auto;           
+    margin-bottom: 20px;     
+}
+
+.divTwo p {
+    font-size: 18px;      
+    line-height: 1.6;            
+    color: #333;               
+    margin: 0; 
+    text-align: start;                
+}
+
+ 
+.foot {
+    bottom: 0;             
+    width: 80%;           
+    text-align: center;    
+    background-color: rgb(91, 155, 213); 
+    color: rgb(0, 0, 0);         
+    font-size: 18px;
+    margin-left: 8%;   
+    margin-top: 4%; 
+    border-radius: 5px;
+    padding: 1px;
+}
+
+ 
+.footer span {
+    font-size: 16px;     
+    margin-right: 5px;    
+}
+
+.main {
+    display: flex;                  
+    justify-content: space-between;  
+    align-items: flex-start;   
+    width: 80%;
+    margin-top: 6%;                    
+    margin-bottom: 20px;  
+    margin-left: 8%;
+}
+
+.textLeft {
+    width: 70%;        
+}
+
+.textLeft p {
+    line-height: 1.6;          
+    font-size: larger; 
+}
+
+.imageRight img {
+    width: 100%;                
+    height: auto;                
+    max-height: 15em;  
+    object-fit: cover;       
+    border-radius: 10px;
+}
+
+.fullWidth {
+    width: 80%;                     
+    text-align: justify;             
+    margin-left: 8%;
+}
+
+.fullWidth p {
+    line-height: 1.6;              
+    padding-top: 10px;    
+    font-size: larger;           
+}
+
+.projects {
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 3%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.projects p {
+    font-size: larger;
+}
+.projects span {
+    font-weight:bold;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;  
+        text-align: center;  
+        margin-top: 10%;
+    }
+    .projects p {
+        text-align: start; 
+        font-size: medium;
+    }
+}
+ 
+.formDiv {
+    width: 75%;
+    margin-left: 11%;
+    margin-top: 4%;
+}
+
+.fSetOne {
+    height: 100px;
+    align-items:  normal;
+    margin-bottom: 3%;
+    padding-top: 2%;
+     
+}
+
+.fSetTwo {
+    height: 250px;
+    padding-top: 2%;
+}
+
+.map {
+    width: 80%;
+    margin-left: 13%;
+    margin-top: 5%;
+    position: relative;
+}
+
+.map img {
+   object-fit: cover;
+   height: 400px;
+   width: 950px;
+}
+
+.overlay {
+    position: absolute;
+    top: 4%;
+    left: 65%;
+    color: black;
+    background: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    gap: 10px;  
+}
+
+.item {
+    position: relative;  
+    padding: 0 10px; 
+}
+
+.item::after {
+    content: '';  
+    position: absolute; 
+    right: -5px;  
+    top: 0;  
+    bottom: 0; 
+    width: 1px;  
+    background-color: black; 
+    display: block;  
+}

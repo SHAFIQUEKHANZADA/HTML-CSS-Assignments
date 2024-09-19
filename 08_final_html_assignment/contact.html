@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <div class="divOne">
+        <img
+          class="imge"
+          src="panacloud.png"
+          alt="panacloud"
+          width="100px"
+          height="50px"
+        />
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+     <div class="formDiv">
+      <form>
+        <fieldset class="fSetOne">
+            <legend>Your Details:</legend>
+            <label for="name">Name:</label>
+            <input type="text"><br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email">
+        </fieldset>
+
+        <fieldset class="fSetTwo">
+            <legend>Your Review:</legend>
+
+            How did you hear about us ?
+            <select name="" id="">
+                <option value="google">Google</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="facebook">Facebook</option>
+            </select>
+            <br><br>
+
+            Would you visit again ?  <br>
+            <input type="radio" name="x" id="">Yes
+            <input type="radio" name="x" id="">No
+            <input type="radio" name="x" id="">Maybe
+            <br>
+
+            Comments: <br>
+            <textarea name="" id="" rows="3"></textarea>
+            <br>
+
+            <input type="checkbox"> Sign me up for email updates
+            <br>
+             <button>Submit review</button>
+        </fieldset>
+    </form>
+     </div>
+     <div class="map">
+      <img src="map.jpg" alt="map" >
+      <div class="overlay">
+         <div class="item">Map</div>
+         <div class="item">Sat</div>
+         <div class="item">Ter</div>
+         <div class="item">Earth</div>
+      </div>
+     </div>
+
+     <div class="foot">
+      <p>
+          <span>&copy;</span> 2024 All Rights Reserved.
+      </p>
+  </div>
+  </body>
+</html>
